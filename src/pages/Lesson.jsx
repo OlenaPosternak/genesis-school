@@ -1,4 +1,4 @@
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react';
 import { getCourseById } from '../fetchApi';
 
@@ -8,8 +8,7 @@ import '@videojs/themes/dist/forest/index.css';
 
 import noImage from '../img/noImg1.jpg';
 import {
-  BackBtn,
-  BackLink,
+
   MainTitele,
   Wrapper,
   SpeedInfo,
@@ -24,8 +23,7 @@ import {
 
 const CourseInfo = () => {
   const { courseId } = useParams();
-  const location = useLocation();
-  const backLinkHref = location.state?.from || '/';
+
 
   const [course, setCourse] = useState('');
   const [lessons, setLessons] = useState([]);
@@ -119,9 +117,9 @@ const CourseInfo = () => {
 
   return (
     <div>
-      <BackLink to={backLinkHref}>
+      {/* <BackLink to={backLinkHref}>
         <BackBtn>GO BACK</BackBtn>
-      </BackLink>
+      </BackLink> */}
       {course ? (
         <>
           <MainTitele>Course title:</MainTitele>

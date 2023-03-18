@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+
 import { getInfo } from '../fetchApi';
 
 import videojs from 'video.js';
@@ -18,7 +18,7 @@ import {
 
 const AllCourses = () => {
   const [courses, setCourses] = useState([]);
-  const location = useLocation();
+
   const [page, setPage] = useState(0);
   const [maxPage, setMaxPage] = useState(0);
 
@@ -34,7 +34,7 @@ const AllCourses = () => {
   useEffect(() => {
     try {
       getInfo().then(data => {
-        
+
         // sorted by date from newest to oldest
         // const sortedArray = data.sort((a, b) => Date.parse(b.launchDate) - Date.parse(a.launchDate));
 
@@ -99,7 +99,6 @@ const AllCourses = () => {
             <ListItem key={course.id}>
               <LinkItem
                 to={`${course.id}`}
-                state={{ from: location }}
                 style={{
                   display: 'flex',
                   flexDirection: 'column',
