@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/genesis-school/static/css/main.712b06da.css",
-    "main.js": "/genesis-school/static/js/main.a4719bff.js",
-    "static/js/778.5e4f2b53.chunk.js": "/genesis-school/static/js/778.5e4f2b53.chunk.js",
+    "main.js": "/genesis-school/static/js/main.c30fbb64.js",
+    "static/js/778.1838428d.chunk.js": "/genesis-school/static/js/778.1838428d.chunk.js",
     "static/css/128.54af2b30.chunk.css": "/genesis-school/static/css/128.54af2b30.chunk.css",
     "static/js/128.5bcaabf7.chunk.js": "/genesis-school/static/js/128.5bcaabf7.chunk.js",
     "static/css/376.f0e09fde.chunk.css": "/genesis-school/static/css/376.f0e09fde.chunk.css",
     "static/js/376.12c8c36d.chunk.js": "/genesis-school/static/js/376.12c8c36d.chunk.js",
     "index.html": "/genesis-school/index.html",
     "main.712b06da.css.map": "/genesis-school/static/css/main.712b06da.css.map",
-    "main.a4719bff.js.map": "/genesis-school/static/js/main.a4719bff.js.map",
-    "778.5e4f2b53.chunk.js.map": "/genesis-school/static/js/778.5e4f2b53.chunk.js.map",
+    "main.c30fbb64.js.map": "/genesis-school/static/js/main.c30fbb64.js.map",
+    "778.1838428d.chunk.js.map": "/genesis-school/static/js/778.1838428d.chunk.js.map",
     "128.54af2b30.chunk.css.map": "/genesis-school/static/css/128.54af2b30.chunk.css.map",
     "128.5bcaabf7.chunk.js.map": "/genesis-school/static/js/128.5bcaabf7.chunk.js.map",
     "376.f0e09fde.chunk.css.map": "/genesis-school/static/css/376.f0e09fde.chunk.css.map",
@@ -18,6 +18,6 @@
   },
   "entrypoints": [
     "static/css/main.712b06da.css",
-    "static/js/main.a4719bff.js"
+    "static/js/main.c30fbb64.js"
   ]
 }
