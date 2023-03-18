@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/104.9e6b5cc4.chunk.js","mappings":"wIAMA,UANkB,WAClB,OACI,iCAEH,C","sources":["pages/Lesson.jsx"],"sourcesContent":["const CourseInfo =()=>{\nreturn(\n    <div>test</div>\n)\n}\n\nexport default CourseInfo;"],"names":[],"sourceRoot":""}
