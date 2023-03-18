@@ -5,7 +5,6 @@ import { getInfo } from '../fetchApi';
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
 
-
 import { Buttons } from 'components/Buttons/Buttons';
 import {
   AllItems,
@@ -23,14 +22,6 @@ const AllCourses = () => {
   const [page, setPage] = useState(0);
   const [maxPage, setMaxPage] = useState(0);
 
-  const chunkArray = arr => {
-    let results = [];
-    while (arr.length) {
-      results.push(arr.splice(0, 10));
-    }
-    setCourses(results);
-    setMaxPage(results.length);
-  };
 
   useEffect(() => {
     try {
@@ -48,6 +39,16 @@ const AllCourses = () => {
       console.log(error);
     }
   }, []);
+
+  const chunkArray = arr => {
+    let results = [];
+    while (arr.length) {
+      results.push(arr.splice(0, 10));
+    }
+    setCourses(results);
+    setMaxPage(results.length);
+  };
+
 
   const ref = useRef(null);
 
