@@ -69,7 +69,7 @@ const AllCourses = () => {
                 const player = videojs(ref.current);
                 player.width(300);
                 player.height('auto');
-                player.play();
+                isHovering && player.play();
               }}
               onMouseLeave={() => {
                 const player = videojs(ref.current);
