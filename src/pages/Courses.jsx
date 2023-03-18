@@ -34,9 +34,12 @@ const AllCourses = () => {
   useEffect(() => {
     try {
       getInfo().then(data => {
+        
         // sorted by date from newest to oldest
-        const sortedArray = data.sort((a, b) => Date.parse(b.launchDate) - Date.parse(a.launchDate));
+        // const sortedArray = data.sort((a, b) => Date.parse(b.launchDate) - Date.parse(a.launchDate));
 
+        // sorted from last to first
+        const sortedArray = data.reverse();
 
         return chunkArray(sortedArray);
       });
@@ -48,7 +51,6 @@ const AllCourses = () => {
   const ref = useRef(null);
 
   const OnHoverImage = ({ img, courseVideoPreview }) => {
-
     const [isHovering, setIsHovering] = useState(false);
 
     return (
