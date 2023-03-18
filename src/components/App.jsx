@@ -4,27 +4,27 @@ import { NotFound } from 'pages/NotFound';
 import { Loader } from './Loader';
 import { Container } from './App.styled';
 
-import { ErrorBoundary } from 'react-error-boundary';
+// import { ErrorBoundary } from 'react-error-boundary';
 const AllCourses = lazy(() => import('pages/Courses'));
 const CourseInfo = lazy(() => import('pages/Lesson'));
 
 
-const ErrorFallback = ({ error }) => {
-  return (
-    <div role="alert">
-      <p>Something went wrong:</p>
-      <pre>{error.message}</pre>
-    </div>
-  );
-};
+// const ErrorFallback = ({ error }) => {
+//   return (
+//     <div role="alert">
+//       <p>Something went wrong:</p>
+//       <pre>{error.message}</pre>
+//     </div>
+//   );
+// };
 
 
 export const App = () => {
   return (
       <Container>
-    <ErrorBoundary
+    {/* <ErrorBoundary
     FallbackComponent={ErrorFallback}
-  >
+  > */}
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/genesis-school" element={<AllCourses />} />
@@ -32,7 +32,7 @@ export const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
-      </ErrorBoundary>
+      {/* </ErrorBoundary> */}
     </Container>
   );
 };
