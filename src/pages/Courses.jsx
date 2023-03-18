@@ -67,6 +67,8 @@ const AllCourses = () => {
               onPlay={() => setIsHovering(true)}
               onPause={() => setIsHovering(false)}
               onMouseEnter={() => {
+                window.videojs = videojs;
+
                 const player = videojs(ref.current);
                 player.width(300);
                 player.height('auto');
