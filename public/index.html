@@ -64,6 +64,16 @@
 
 
     <!-- End Single Page Apps for GitHub Pages -->
+    <script src="./elk.bundled.js"></script>
+    <script type="text/javascript">
+      const elk = new ELK()
+  
+      elk.layout(graph)
+         .then(function(g) {
+           document.body.innerHTML = "<pre>" + JSON.stringify(g, null, " ") + "</pre>"
+         })
+    </script>
+    
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
