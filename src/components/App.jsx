@@ -8,9 +8,6 @@ import { Container } from './App.styled';
 const AllCourses = lazy(() => import('pages/Courses'));
 const CourseInfo = lazy(() => import('pages/Lesson'));
 
-window.g = null;
-window.i = null;
-
 
 // const ErrorFallback = ({ error }) => {
 //   return (
